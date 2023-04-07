@@ -1,0 +1,10 @@
+li {
+  list-style: none;
+}
+
+.start-again {
+  margin-top: 20px;
+  display: none;
+}
+
+/* just a comment */
