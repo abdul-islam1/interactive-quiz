@@ -80,19 +80,21 @@ submit.addEventListener("click", () => {
     loadQuestion();
   } else {
     document.getElementById("showScore").innerHTML = `Your score is: ${score}/${quizDB.length}`;
-    
+
   }
 });
 
 var count = 0;
-var intId = setInterval(counter,1000);
-function counter(){
-    document.getElementById("timer").innerHTML = ++count;
+var intId = setInterval(counter, 1000);
+function counter() {
+  document.getElementById("timer").innerHTML = ++count;
 
-    if(count >=10){
-        document.getElementById("showScore").innerHTML = `Your score is: ${score}/${quizDB.length}`;
-        document.getElementById('submit').hidden = true;
-        clearInterval(intId);
-      
-    }
+  if (count >= 10) {
+    document.getElementById("showScore").innerHTML = `Your score is: ${score}/${quizDB.length}`;
+    document.getElementById('submit').hidden = true;
+    clearInterval(intId);
+
+  }
 }
+
+// for random question order
